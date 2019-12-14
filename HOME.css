@@ -1,0 +1,236 @@
+section{
+  margin-left: 22%;
+}
+
+.menu-tab{
+  display: flex;
+  height: 20px;
+  /* text-align: center;
+  padding: 0 0 0 10px; */
+}
+
+.tab1{
+  border: 1px solid rgb(235, 235, 235);
+  border-radius: 3px;
+  color: #222;
+  background-color: rgb(235, 235, 235);
+  /* padding: 5px; */
+  /* height: 25px; */
+}
+
+/* bỏ gạch chân đường dẫn */
+a{
+  text-decoration: none;
+}
+
+.menu-content{
+  height: 420px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .menu-content-number-system{
+    height: auto;
+    text-align: center;
+    margin-right: 400px;
+  }
+  
+.menu-tab :hover{
+  color: rgb(0, 47, 255);
+}
+
+  /* Style the header */
+  header {
+    background-image: url("http://blog.edx.org/wp-content/uploads/2016/04/Math-1.jpg"); 
+    background-color: #cccccc;
+    padding: 30px;
+    text-align: left;
+    font-size: 35px;
+    color: white;
+  }
+  img
+{   width: 100%;
+    height: 40%;
+    background-color: grey;
+    border-radius: 25px 25px 0px 0px;
+    
+}
+
+  
+
+  
+  /* Clear floats after the columns */
+  section:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the footer */
+  #footer {
+    
+    text-align: center;
+  
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 370px;
+  }
+  #footer1 {
+   
+    text-align: center;
+    
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 315px;
+  }
+  #footer2 {
+  
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  
+  
+/* Ibrahim Jabbari -- www.ibrahimjabbari.com */
+@import url(https://fonts.googleapis.com/css?family=Arvo:700);
+@import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
+body {
+  font-family: Tahoma;
+  size: 13px;
+  width: 100%;
+}
+.plate {
+  width: 200px;
+  margin-left: 40%;
+}
+.shadow {
+  /* color: #fff; */
+  color: #222;
+  font-family: Arvo;
+  font-weight: bold;
+  text-shadow:
+    -3px -3px 0 #222,
+    3px -3px 0 #222,
+    -3px 3px 0 #222,
+    3px 3px 0 #222,
+    4px 4px 0 #fff,
+    5px 5px 0 #fff,
+    6px 6px 0 #fff,
+    7px 7px 0 #fff;
+  line-height: 0.8em;
+  letter-spacing: 0.1em;
+  transform: scaleY(0.7);
+  -webkit-transform: scaleY(0.7);
+  -moz-transform: scaleY(0.7);
+  margin:0;
+  text-align: center;
+}
+
+.text1 {
+  font-size: 25px;
+}
+.text2 {
+  font-size: 50px;
+}
+.text3 {
+  font-size: 70px;
+}
+.center
+{
+    text-align: center;
+    margin: auto;
+}
+#menu_top
+{
+    background: white;
+    height: 40px;
+}
+#menu_top ul
+{
+margin: 0px;
+padding: 0px;
+float: left;
+
+}
+#menu_top ul li 
+{
+    list-style: none;
+    float: left;
+    width: 14,2%;
+}
+#menu_top ul li a
+{
+    text-decoration: none;
+    float:both;
+    display: block;
+    height:40px;
+    line-height: 40px;
+    color:black;   
+    padding: 0px 20px 0px 20px;
+    border-right: 0px solid white;
+    font-weight: bold;
+}
+#Background
+{
+    background-image: url(./img/math.jpg);
+    background-repeat: none;
+    height: 100px;
+    width: 100%;
+  }
+  .center
+{
+    text-align: center;
+}
+
+
+@import "compass/css3";
+
+@import "compass/css3/transform";
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+body {
+ background: url(https://coolbackgrounds.io/images/backgrounds/index/disco-dba865f1.png);
+ 
+ width: 100%;
+}
+
+.wrap {
+  padding: 5em 0.5em;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  font-weight: normal;
+  color: red;
+  text-transform: uppercase;
+  font-size: 1em;
+  white-space: nowrap;
+  font-size: 2vw;
+  z-index: 1000;
+  font-family: 'Bangers', cursive;
+  text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.7);
+  @include skew(0, -6.7deg, false);
+  @include transition-property(font-size);
+  @include transition-duration(0.5s);
+ 
+}
+
+@media screen and (max-width: 50em) {
+  h1 {
+    font-size: 20vw;
+   }
+}
+
+.newthing{
+  margin-top: 50px ;
+}
+
