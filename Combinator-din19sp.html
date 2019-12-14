@@ -1,0 +1,118 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Combinatics</title>
+    <link rel="stylesheet" href="HOME.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="Combinator-din19sp.js"></script>
+    
+               
+    <style>
+         
+        #DisplayA { display: block; }
+        #DisplayB { display: none; }
+        #DisplayC { display: none; }
+    </style>
+    <header>
+        <div class="plate">
+            <!-- <p class="script"> -->
+            <p class="shadow text1">AMERICAN</p>
+            <p class="shadow text2">MATH</p>
+            <p class="shadow text3">TOOL</p>
+            <!-- <p class="script"> -->
+          </div>
+ </header>
+ 
+
+</head>
+<body class ="lightblue center">
+        <div id="Background">
+            
+        <div id="menu_top">
+                <div>
+                        <ul>
+                                <li><a href="./home.html">Home</a></li>
+                                <li><a href="./Number-converter-din19sp.html">Number System Conversions</a></li>
+                                <li><a href="./number-system-output.html">Number System Outputs</a></li>
+                                <li><a href="./Combinator-din19sp.html">Combinatorics</a>
+                                <li><a href="./truthtable.html">Truth Table</a></li>
+                                <li><a href="./Random-value-din19sp.html">Random Values</a></li>
+                                <li><a href="./Distance-convert.html">Distance Convert</a></li>
+                              </ul>
+                        </div>
+        <div>
+      
+        </div>
+        </div>
+        </div>
+    <div class="center">
+
+        <h1>Combinatics</h1>
+        <div>
+                <button class="button" type="menu" onclick="DisplayA()">Combination</button>
+                <button class="button" type="menu" onclick="DisplayB()">Permutation Repetition not allowed</button>
+                <button class="button" type="menu" onclick="DisplayC()">Permutation Repetition  allowed</button>
+        </div>
+
+    
+
+    <div id="DisplayA">
+    <div>Enter n :
+        <input type="number" id="nC" value="">
+    </div>
+    <div>Enter k :
+        <input type="number" id="kC" value="">
+    </div><br>
+    <button type="button" onclick="Combination()">Execute</button>
+    <table class="center">
+    <tr>
+        <td>Combination : </td>
+        <td><div id="Res1"></div></td>
+    </tr>
+    </table>
+    </div>
+    <div id="DisplayB">
+        <div>Enter n:
+            <input type="number" id="nP" value="">
+        </div>
+        <div> Enter k: 
+            <input type="number" id="kP" value="">
+        </div><br>
+        <button type="button" onclick="Permutation1()">Execute</button>
+    <table class="center">
+    <tr>
+        <td>Permutation Repetition not allowed : </td>
+        <td><div id="Res2"></div></td>
+    </tr>
+    </table>
+    </div>
+    <div id="DisplayC">
+        <div>Enter n:
+            <input type="number" id="nA" value="">
+        </div>
+        <div> Enter k: 
+            <input type="number" id="kA" value="">
+        </div><br>
+        <button type="button" onclick="Permutation2()">Execute</button>
+    <table class="center">
+    <tr>
+        <td>Permutation Repetition  allowed : </td>
+        <td><div id="Res3"></div></td>
+    </tr>
+    </table>
+    </div>
+</div>
+
+<footer id="footer">
+        <p>Posted by: Ngoc Du - Khoa Dang - Huy The</p>
+        <p>Contact information: <a href="mailto:someone@example.com">
+        ngocdu171@gmail.com</a>.</p>
+    </footer>
+    
+    
+</body>
+
+</html>
