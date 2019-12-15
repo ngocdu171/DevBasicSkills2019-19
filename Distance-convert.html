@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<link rel="stylesheet" type="text/css" href="HOME.css">
+<title>Kilometer to mile Distance Converter</title>
+<header>
+        <div class="plate">
+            <!-- <p class="script"> -->
+            <p class="shadow text1">AMERICAN</p>
+            <p class="shadow text2">MATH</p>
+            <p class="shadow text3">TOOL</p>
+            <!-- <p class="script"> -->
+          </div>
+</header>
+</head>
+<body class="lightblue center">
+        <div id="Background">
+                <div id="menu_top">
+                    <ul>
+                      <li><a href="./home.html">Home</a></li>
+                      <li><a href="./Number-converter-din19sp.html">Number System Conversions</a></li>
+                      <li><a href="./number-system-output.html">Number System Outputs</a></li>
+                      <li><a href="./Combinator-din19sp.html">Combinatorics</a>
+                      <li><a href="./truthtable.html">Truth Table</a></li>
+                      <li><a href="./Random-value-din19sp.html">Random Values</a></li>
+                      <li><a href="./Distance-convert.html">Distance Convert</a></li>
+                      </ul>
+                </div>
+              </div>
+
+<h1>Distance Converter</h1>
+<p>Type a value in the Kilometer field to convert the value to Mile:</p>
+
+<p>
+  <label>Kilometer</label>
+  <input id="inputkilometer" type="number" placeholder="Kilometer" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+</p>
+<p>Mile: <span id="outputmile"></span></p>
+
+<script>
+function LengthConverter(valNum) {
+  document.getElementById("outputmile").innerHTML=valNum/1.609344;
+}
+</script>
+<footer id="footer">
+        <p>Posted by: Ngoc Du - Khoa Dang - Huy The</p>
+        <p>Contact information: <a href="mailto:someone@example.com">
+        ngocdu171@gmail.com</a>.</p>
+    </footer>
+</body>
+</html>
