@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Number Systtem Output</title>
+    <link rel="stylesheet" href="HOME.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <style>
+        body { display: block; }
+        .divTableContainer { display: flex; flex-direction: row; justify-content: center; margin: auto; }
+        .divTable  { display: table; border-collapse:collapse; margin: 2em;}
+        .divTr      { display: table-row; }
+        .divTr:hover { background-color: lightgray; }
+        .divTd     { display: table-cell; border: 1px solid black; text-align: center; padding: 5px 10px 5px 10px; text-transform: uppercase; }
+        .divTdh    { display: table-cell; border: 1px solid black; text-align: center; padding: 5px 10px 5px 10px; font-weight: bold; background-color: lightgray;}
+    </style>
+     <header>
+            <div class="plate">
+                <!-- <p class="script"> -->
+                <p class="shadow text1">AMERICAN</p>
+                <p class="shadow text2">MATH</p>
+                <p class="shadow text3">TOOL</p>
+                <!-- <p class="script"> -->
+              </div>
+    </header>
+    
+</head>
+
+<body class ="lightblue center">
+        <div id="Background">
+        <div id="menu_top">
+                <ul>
+                        <li><a href="./home.html">Home</a></li>
+                        <li><a href="./Number-converter-din19sp.html">Number System Conversions</a></li>
+                        <li><a href="./number-system-output.html">Number System Outputs</a></li>
+                        <li><a href="./Combinator-din19sp.html">Combinatorics</a>
+                        <li><a href="./truthtable.html">Truth Table</a></li>
+                        <li><a href="./Random-value-din19sp.html">Random Values</a></li>
+                        <li><a href="./Distance-convert.html">Distance Convert</a></li>
+                      </ul>
+        </div>
+    </div>
+        
+            
+    
+    
+    <section>
+
+      
+   
+        <div class="menu-content-number-system">
+               
+                <div>
+                        <h1>Number System Output</h1>
+                        <button type="button" class="center" onclick="clearTable()">Clear tables</button>
+                        <button type="button" onclick="fillTable()">Fill tables</button>
+                  </div>
+            <div class="divTableContainer">
+                <div id="divTable1" class="divTable">
+                    <div class="divTr">
+                        <div class="divTdh">DEC</div>
+                        <div class="divTdh">BIN</div>
+                        <div class="divTdh">OCT</div>
+                        <div class="divTdh">HEX</div>
+                    </div>
+                </div>
+                <div id="divTable2" class="divTable">
+                    <div class="divTr">
+                        <div class="divTdh">DEC</div>
+                        <div class="divTdh">BIN</div>
+                        <div class="divTdh">OCT</div>
+                        <div class="divTdh">HEX</div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+  
+     
+            
+     
+      
+      <!-- <article>
+        <h1>London</h1>
+        <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+        <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+      </article> -->
+    </section>
+
+    <script type="text/javascript">
+        function fillTable()
+        {
+            //Clear rows if they exists, needed if pressing fill button
+            for(var r=0; r<51; r++)
+            { 
+                var e = document.getElementById('divTr'+r);
+                if(e != null) { e.remove(); }
+            }
+            
+            var radixes = [10, 2, 8, 16]; //Radixes used in cell creation loop for number conversion
+        
+            //Create 50 rows to tables
+            for(var row=0; row<51; row++)
+            { 
+                //Create row div
+                var divTr = document.createElement('div');
+                divTr.setAttribute('id', 'divTr'+row);
+                divTr.setAttribute('class', 'divTr');
+        
+                //Create cell divs and append to row div
+                for(var i=0; i<radixes.length; i++)
+                {
+                    var divElem = document.createElement('div');
+                    divElem.setAttribute('class', 'divTd');
+                    divElem.innerHTML = row.toString(radixes[i]); //Converts number to dec (10), bin (2), oct (8) or hex (16)
+                    divTr.appendChild(divElem);
+                }
+        
+                //Append row div to table div
+                if(row < 26)
+                {   //Rows 0-25 goes to first table
+                    document.getElementById("divTable1").appendChild(divTr);
+                }
+                else
+                {   //Rows 26-50 goes to second table
+                    document.getElementById("divTable2").appendChild(divTr);
+                }
+            }
+        }
+        
+        function clearTable()
+        {
+            //Find all cells using divTd class and set content empty character (&nbsp;)
+            var cells = document.getElementsByClassName("divTd");
+            for(var i=0; i<cells.length; i++)
+            {
+                cells[i].innerHTML = "&nbsp;";
+            }
+        }
+        </script>
+    
+    <footer id="footer">
+        <p>Posted by: Ngoc Du - Khoa Dang - Huy The</p>
+        <p>Contact information: <a href="mailto:someone@example.com">
+        ngocdu171@gmail.com</a>.</p>
+    </footer>
+</body>
+</html>
